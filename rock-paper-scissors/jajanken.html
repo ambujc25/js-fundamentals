@@ -1,0 +1,41 @@
+<html>
+    <script>
+        function return_random(){
+            let index = Math.floor(Math.random()*10)%3;
+            //console.log(index);
+            let options = ["Rock","Paper","Scissors"];
+            return options[index];
+        }
+
+        function play(player_selection,computer = return_random()){
+            player_selection = player_selection.toLowerCase();
+            if(player_selection=="rock"){
+                if(computer=='Rock'){
+                    console.log("Tie!");
+                }else if(computer=='Paper'){
+                    console.log("You lose!" + computer + " beats " + player_selection);
+                }else{
+                    console.log("You win!" + player_selection + " beats " + computer);
+                }
+            }else if(player_selection=='paper'){
+                if(computer=='Paper'){
+                    console.log("Tie!");
+                }else if(computer=='Scissors'){
+                    console.log("You lose!" + computer + " beats " + player_selection);
+                }else{
+                    console.log("You win!" + player_selection + " beats " + computer);
+                }
+            }else if(player_selection=='scissors'){
+                if(computer=='Scissors'){
+                    console.log("Tie!");
+                }else if(computer=='Rock'){
+                    console.log("You lose!" + computer + " beats " + player_selection);
+                }else{
+                    console.log("You win!" + player_selection + " beats " + computer);
+                }
+            }else{
+                console.log("Invalid selection");
+            }
+        }
+    </script>
+</html>
