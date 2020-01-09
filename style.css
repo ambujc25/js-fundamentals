@@ -1,0 +1,37 @@
+.center{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.buttons{
+    text-align: center;
+}
+
+ol li{
+    list-style-type: none;
+    display: inline;
+}
+
+ol li button{
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+.score{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.score ul{
+    list-style-type:none;
+}
+
+.score ul li{
+    display: inline;
+    margin-left: 50px;
+}
+
+.round{
+    margin-top: 60px;
+    text-align: center;
+}
